@@ -50,7 +50,7 @@ const AllProperties = () => {
                 <CustomButton 
                   title={`Sort price ${currentPrice === 'asc' ? '↑' : '↓'}`}
                   handleClick={() => toggleSort('price')}
-                  backgroundColor="#475be8"
+                  backgroundColor="#B0CB1F"
                   color="#fcfcfc"
                 />
                 <TextField 
@@ -102,7 +102,7 @@ const AllProperties = () => {
         <CustomButton 
           title="Add Property"
           handleClick={() => navigate('/properties/create')}
-          backgroundColor="#475be8"
+          backgroundColor="#B0CB1F"
           color="#fcfcfc"
           icon={<Add />}
         />
@@ -126,8 +126,8 @@ const AllProperties = () => {
           <CustomButton 
             title="Previous"
             handleClick={() => setCurrent((prev) => prev - 1)}
-            backgroundColor="#475be8"
-            color="#fcfcfc"
+            backgroundColor="#B0CB1F"
+            color="ffffff"
             disabled={!(current > 1)}
           />
           <Box display={{ xs: 'hidden', sm: 'flex' }}  alignItems="center" gap="5px">
@@ -136,8 +136,8 @@ const AllProperties = () => {
           <CustomButton 
             title="Next"
             handleClick={() => setCurrent((prev) => prev + 1)}
-            backgroundColor="#475be8"
-            color="#fcfcfc"
+            backgroundColor="#B0CB1F"
+            color="ffffff"
             disabled={current === pageCount}
           />
           <Select
